@@ -104,7 +104,10 @@ export default class Main extends Component {
               <Name>{item.name}</Name>
               <Bio>{item.bio}</Bio>
 
-              <ProfileButton onPress={() => {}}>
+              <ProfileButton
+                onPress={() => {
+                  this.props.navigation.navigate('user', {user: item});
+                }}>
                 <ProfileButtonText>Ver perfil</ProfileButtonText>
               </ProfileButton>
 
