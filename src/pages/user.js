@@ -28,7 +28,7 @@ export default class User extends Component {
   }
 
   render() {
-    const {route} = this.route;
+    const {route} = this.props;
     const {user} = route.params;
     const {stars} = this.state;
 
