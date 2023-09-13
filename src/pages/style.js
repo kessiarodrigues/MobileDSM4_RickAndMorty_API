@@ -112,9 +112,7 @@ export const Bioperfil = styled.Text`
     text-align: center;
 `;
 
-export const Stars = styled.FlatList.attrs({
-    showsVerticalScrollIndicator: false,
-})`
+export const Stars = styled.FlatList`
     margin-top: 20px;
 `;
 
